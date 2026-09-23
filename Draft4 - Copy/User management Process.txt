@@ -1,0 +1,34 @@
+User Management
+
+Business Process
+The User Management module allows the administrator to manage user accounts for the water refilling station. The administrator can register new employee or administrator accounts, assign roles, link accounts to employee records, and delete accounts when necessary. It also supports account login and password recovery using a recovery code.
+
+Input
+
+Full Name
+Username
+Password
+Recovery Code
+Role (Employee/Admin)
+Linked Employee ID
+Login Username and Password
+Recovery Code and New Password when resetting a password
+
+Process
+
+The administrator enters the required information for a new user account.
+The system uses Linear Search to check whether the username already exists.
+If the username is unique, the system generates a User ID and stores the account in the users array using manual insertion.
+During login, the system searches the users array for the entered username and verifies the password.
+For password recovery, the system searches for the account and verifies the entered recovery code before allowing the password to be changed.
+The administrator can delete an existing account, except for the default administrator account or the currently logged-in account.
+The system displays the updated user account information in the User Management table.
+
+Output
+
+Newly generated User ID
+Successfully registered user account
+Login result
+Password reset/recovery confirmation
+Updated user account list
+Account deletion confirmation or error message
